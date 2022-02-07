@@ -1,0 +1,88 @@
+/* SELECTORES DE ATRIBUTOS */
+
+/* Modifica todos los atributos href */
+[href] {
+  color: aliceblue;
+  font-size: 30px;
+}
+
+/*  simbolo ^ =  atributo que contenga la palabra al inicio */
+
+[href^="www"] {
+  background: red;
+}
+
+/*  simbolo $ =  atributo que contenga la palabra al final */
+[href$="org"] {
+  background: blueviolet;
+}
+
+/*  simbolo * =  atributo que contenga la palabra*/
+[href*="lenguajecss"] {
+  background: palevioletred;
+}
+
+/* SELECTOR DE CLASE */
+
+.contenedor {
+  background: black;
+}
+
+/* SELECTORES COMBINADORES */
+
+h2,
+h3 {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: deeppink;
+}
+/* COMBINADORES DE DESCENDIENTES */
+/* utilizar un espacio  */
+.contenedor p {
+  color: cyan;
+  font-size: 30px;
+}
+
+/* COMBINADORES DE HIJOS DIRECTO */
+/* utilizar simbolo ">"   */
+.contenedor > p {
+  color: lime;
+  font-size: 25px;
+}
+
+/* ESPECIFICIDAD */
+
+/* nav que tenga la clase contenedor_2 y clase titulo  */
+nav.contenedor_2.titulo {
+  color: darkgreen;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid lightseagreen;
+  border-radius: 10%;
+  background-color: aquamarine;
+}
+
+/* Elemento con clase contenedor que este dentro de nav */
+
+nav .contenedor_2 {
+  background-color: coral;
+}
+
+/* COMBINADORES DE ELEMENTO HERMANO ABYACENTE  */
+/* selecciona al siguiente elemento  */
+/* utilizando el simbolo "+"  */
+
+
+/* en este caso selecciona solo el elemento "p" que se encuentra
+exactamento luego de h2 */
+
+h2+p{
+   color:darkmagenta;
+}
+
+/* COMBINADORES DE ELEMENTOS HERMANOS EN GENERAL  */
+/* utilizando el simbolo "~"  */
+
+h3~p{
+   color:darkred;
+}

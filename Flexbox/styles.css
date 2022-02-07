@@ -1,0 +1,135 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* NUESTRO FLEX CONTAINER (todos los elementos que esten dentro de este
+tambien seran flexibles) */
+/* .container{
+    width: 400px;
+    max-width: 600px;
+    height: 500px;
+    outline: 2px solid crimson;
+    margin: 20px auto; */
+    /* le agregamos display:flex, para que sea flexible
+     (los elementos se colocaran de manera horizontal o en fila) */
+     /* display: flex;
+} */
+
+/* .item{
+    width: 95px;
+    height: 80px;
+    background: darkcyan;
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif; */
+    /* centrar verticalmente los elementos */
+    /* line-height: 80px;
+} */
+/* 
+.item2{
+    background: cornflowerblue; */
+    /* order:-1; */
+    /* margin-top:auto;
+} */
+/* 
+.item3{
+    background: coral; */
+     /* order:-1; */
+     /* margin-bottom:auto;
+} */
+/* 
+.item4{
+    background: rgb(76, 69, 82); */
+    /* order:-1; */
+/* } */
+
+
+/*--------- PRACTICA FINAL-------  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+body{
+    background: #f2f2f2;
+    font-family: sans-serif;  
+}
+
+/* FLEX-CONTENT */
+.hero{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero_picture{
+    margin-bottom: 1em;
+}
+
+.hero_texts{
+    flex-basis: 40%;
+}
+
+.hero_img{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.hero_paragraph{
+    line-height:1.5;
+    font-weight: 300;
+    padding: .7em 0;
+}
+
+.hero_cta{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background: slateblue ;
+    padding: 20px 30px ;
+
+}
+
+/*------- RESPONSIVE----*/
+
+/* Desde 850px (tama#o escritorio)*/
+@media screen and (min-width:850px){
+
+    /* cambia el tipo de direccion y centramos */
+    .hero{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Texto mas grande */
+    .hero_title{
+        font-size: 4rem;
+    }
+
+    .hero_picture{
+        /* Para que ocupe todo el espacio disponible 
+        cuando este en tama#o escritorio*/
+        flex-grow:1;
+
+        /* colocar la imagen hacia la derecha */
+        order: 1;
+    }
+
+    .hero_img{
+        /* Para que la imagen no crezca y se desborde la pagina*/
+        max-width: none;
+    }
+}
+
+

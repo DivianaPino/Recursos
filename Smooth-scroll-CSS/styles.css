@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Compotamiento de desplazamiento */
+html{
+    scroll-behavior: smooth; /* smooth: suave */
+}
+
+body{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    height: 650px;
+    display:flex; /* distribuir los item */
+    justify-content:space-evenly; /* mismo espacio entre items y bordes */
+    padding: 0 40px;
+    align-items: center; /* alinear verticalmente */
+}
+
+section h2{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+section p{
+    font-weight: 300; /* tama#o de fuente (google fonts) */
+    margin-bottom: 15px;
+}
+
+/* Botones de enlace*/
+section a{
+  display: inline-block;
+  padding: 7px 0px;
+  color: #283773;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+#img1{
+    height: 50%;
+   
+}
+
+#img2{
+    height: 70%; 
+  
+}
+
+#img3{
+    height: 85%;
+    padding: 25px 0;
+}
+
+/* A#adido de webgradients.com */
+
+section:nth-child(1){ /* cambiar el primer elemento section */
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+section:nth-child(2){  /* cambiar el segundo elemento section */
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+section:nth-child(3){  /* cambiar el tercer elemento section */
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+/*--------- RESPONSIVE--------- */
+
+/* Desde tama#o 1000px */
+@media screen and (max-width:1000px){ 
+    section{
+        flex-direction: column-reverse; /* column-reverse: Para que la imagen se coloque primero */
+        /* justify-content: center; */
+    }
+
+    section > #img1, #img2, #img3{
+        height: 60%;
+    }
+
+    .contenedor-texto{
+        text-align: center;
+    }
+}
+
+/* Desde tama#o 800px */
+@media screen and (max-width:800px){ 
+    section > #img1, #img2, #img3{
+        height: 40%;
+    }
+}
+
+/* Desde tama#o 550px */
+@media screen and (max-width:550px){ 
+    section > #img1, #img2, #img3{
+        height: 25%;
+    }
+}
+
+/* Desde tama#o 350px */
+@media screen and (max-width:350px){ 
+    section > #img1, #img2, #img3{
+        height: 20%;
+    }
+}

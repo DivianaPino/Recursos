@@ -1,0 +1,65 @@
+body {
+  /* Quitar los margenes que trae por defecto */
+  margin: 0%;
+}
+
+.box {
+  /* border: 1px solid black;
+    padding: 10px;
+    margin: 10px; */
+  width: 200px;
+  height: 100px;
+}
+
+.box1 {
+  /* width: 100%; */
+  background: steelblue;
+  /* margin: top right bottom left */
+  /* margin: 50px 30px 25px 30px; */
+
+  /* margin: top bottom - left right */
+  /* margin:  40px 80px; */
+
+  /* margin: auto centra el elemento vertical y horizontalmente */
+  /* Para centrar un elemento debe tener un width definido
+    y debe ser tipo bloque */
+  /* margin: auto; */
+
+  /*  mejor hacerlo de la siguiente manera, para evitar ciertos problemas */
+  /* margin: 0 auto; */
+
+  /* COLAPSO DE MARGENES (SOLUCIÓN) */
+
+  /* Si dos margenes chocan, prevalece el que tenga mayor margen */
+  /* PARA QUE EL MARGEN ELEMENTO PADRE NO TOME EL MARGEN DEL
+  ELEMENTO HIJO, SE COLOCA UN PADDING ENTRE ESTE Y SU CONTENIDO
+  (en este caso seria header), con valor 0.1 para que se minimo*/
+  padding: 0.1px;  
+
+}
+
+/* .header {
+  height: 40px;
+  margin-top: 30px;
+  background:greenyellow;
+} */
+
+.box2 {
+  background: tomato;
+  /* margin: 50px; */
+
+  /* padding: top right bottom left */
+  padding: 50px 30px 25px 20px;
+
+  /* box-sizing: border-box. Con ello, se tomara como
+   el borde de la caja el área definida por cualquier 
+  tamaño que establezcas, es decir  el padding y el 
+  borde no se añadiran al ancho que se utiliza para el contenido 
+  de la caja.*/
+  box-sizing: border-box;
+
+  /* Para que el contenido que se derbode se enconda */
+  overflow: hidden;
+
+
+}

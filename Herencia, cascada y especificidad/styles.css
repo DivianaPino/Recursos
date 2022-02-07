@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TIPOS DE ELEMENTOS (INLINE Y BLOCK) */
+/* 
+.enlaces{  */
+    /* para que los elementos tipo inline (como los enlaces), 
+    se muestren en linea pero utilizando las propiedades 
+     en bloquen (block), como el hight, width*/  
+
+    /* NOTA: No se pueden centrar los elementos inline-block,
+    solo los elementos block y con un width difinido, con (margin: 0 auto) */
+    
+    /* display: inline-block;
+    text-decoration:none;
+    background: crimson;
+    color: white;
+    padding: 30px 20px; */
+ /* } */
+
+/* .block{ */
+    /* Para hacer desaparecer el elemento y quitarlo del flujo */
+    
+    /* display: none; */
+    
+    /*  Opaca al elemento y llega al valor cero (blanco), no se
+    quita del flujo sino que se conserva su espacio */
+    
+    /* opacity: 0; */
+/* } */
+
+/* ----------------------------------------------------------------- */
+
+/*------- HERENCIA, ESPECIFICIDAD Y CASCADA----- */
+
+/*---------CASCADA----- */
+
+/* Cascada: El código de abajo siempre va a sobreescribir 
+al código de arriba*/
+
+/* .header{
+    height: 300px;
+    background: crimson;
+    color: white;
+} */
+
+/* .header{ */
+    /* El valor que toma del height es este, ya que es el 
+    último */
+    /* height: 400px;
+} */
+
+/*------- ESPECIFICIDAD----- */
+
+/* 1000- inline css 
+100- ID
+10- class y atributos
+1- Elemento*/
+
+/* La especificidad consiste en que se toma el código del que
+ tiene mayor especificidad y los selectores deben ser del mismo 
+ nivel */
+
+ /* 11 en especificidad */
+ /* h2.title{
+  font-size: 80px;
+ } */
+
+ /* 10 en especificidad, por lo tanto se toma el valor de arriba  */
+ /* .title{
+   font-size: 30px;
+ } */
+
+/* "!important:" Rompe la especificidad, es decir toma ese valor
+ aunque tenga menos especificidad  */
+
+/* Nota: Si dos elementos tiene "!important", se toma el 
+que tenga mas especificidad*/
+
+/*  OJO: No es recomendable utilizarlo porque puede ocasionar 
+problemas */
+
+/* h2{
+    font-size: 100px !important;
+} */
+
+
+/* ------------HERENCIA-------------*/
+/*  En la herencia los elementos que estan dentro de una
+etiqueta son elementos hijos, y dicha etiqueta son los 
+elementos padres  */
+
+/* NOTA: los elementos hijos NO heredan el borde, padding, margin */
+/* PERO se puede obligar a que lo hereden con el valor inherit,
+de la siguiente manera:*/
+
+.header{
+    border: 2px solid black;
+    background: crimson ;
+    height: 200px;
+    color: white;
+    padding: 10px;
+}
+
+.title{
+    font-size: 25px;
+    border:inherit;
+    padding: inherit;
+
+    /* Initial: Para que se coloque con el valor inicial,es decir 
+    valor por defecto */
+    color: initial; 
+
+}
+

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    background: orangered;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+/* border: width style color */
+    border: 10px groove black;
+
+ /* border-width: top right bottom left; */
+    /* border-width: 20px 30px 30px 20px;
+    border-style: dashed dotted;
+    border-color: brown steelblue crimson white; */
+
+     /* border-top: 10px solid brown; 
+    border-right: 5px dashed white;
+    border-bottom: 8px double black;
+    border-left: 8px dotted steelblue;  */
+
+
+    /*  MÁS ESPECIFICO AUN (CADA LADO DEL BORDER)*/
+
+    border-top-width:10px ;
+    border-top-style:solid;
+    border-top-color:brown ;
+
+
+}

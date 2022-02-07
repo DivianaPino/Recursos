@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.card{
+    margin: 20px auto;
+    width: 400px;
+    border: 1px solid black ;
+    padding: 20px 0;
+}
+
+.img{
+    /* -- display:block, porque las imagenes son en linea y no se centran,
+    por lo tanto, se tiene que colocar como un elemento en bloque(block) y
+    tener un width definido*/
+    display: block; 
+    width: 200px;
+    height: 200px;
+    /* -- object-fit:cover para que la imagen no baje sus resolución */
+    object-fit: cover;
+
+    /* -- centrar la imagen */
+    margin: 40px auto;
+
+    border: 20px groove brown;
+
+    /*-- Redondearlas esquinas de una caja */
+    /*-- Para todos las esquinas: */
+    /* border-radius: 40px; */
+
+    /* -- Para redondear las esquinas con valores diferentes*/
+    /* border-radius: 30px 10px 25px 2px; */
+    
+    /* -- Para colocar la imagen circular, debe ser una imagen cuadrada,
+    por lo tanto, debe tener mismo width y height*/
+    border-radius:50%;
+
+}
+
+.saludo{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cta{
+    display: block;
+    width: 150px;
+    background: crimson;
+    border-radius: 3px;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin: 20px auto;
+}
+
